@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!--
+
+TRENDSETTER: WEBSITE ASSIGNMENT - HTML
+Imesh Nimsitha
+CS 2033
+
+-->
+
+<html>
+  <head>
+    <title>Trendsetter - Empowering you through fashion</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/xicon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/55a8c16208.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+  </head>
+
+  <body onload="updateHours();" onscroll="scroll();">
+    <!--
+    
+    FIXED BUTTON: BACK TO TOP
+    
+    -->
+    <div id="backToTop" class="position-fixed bottom-0 end-0 mb-3 me-3">
+      <button
+        class="btn btn-top shadow-none px-3 py-3 d-flex align-items-center"
+        type="button"
+        onclick="backToTop();"
+        aria-label="Back to Top"
+        id="backToTopBtn">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </div>
+
+    <!-- 
+
+    SECTION: HEADER w/ NAVBAR
+
+    -->
+    <div id="header" class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 px-5 pt-3">
+          <a class="navbar-brand" href="#">Trendsetter.</a>
+          <h1>
+            Empowering you<br />
+            through fashion.
+          </h1>
+        </div>
+        <div id="img-header" class="col-12 col-md-8 px-4_5 pt-3">
+          <div class="bg-transparent" id="navbarSupportedContent">
+            <ul id="nav" class="nav mb-2 mb-lg-0 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    
+    SECTION: ABOUT BUSINESS
+    
+    -->
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-4 px-5 pt-4">
+          <p>
+            Trendsetter is an online marketplace dedicated to empowering you
+            through fashion. We offer a wide selection of trendy clothing and
+            accessories that cater to many diverse tastes. We pride ourselves on
+            staying ahead of the curve and providing our customers with a top
+            quality shopping experience.
+            <span class="d-none d-xxl-inline"
+              >Our mission is to inspire confidence and individuality, and make
+              us your go-to destination for fashion-forward finds.</span
+            >
+          </p>
+        </div>
+        <div id="imgAbout1" class="col-4">
+          <img src="img/about1.jpg" class="w-100 h-100" />
+        </div>
+        <div id="imgAbout2" class="col-4">
+          <img src="img/about2.jpg" class="w-100 h-100" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light">
+      <div id="texture">
+        <!--
+    
+      SECTION: ABOUT TEAM
+  
+      -->
+        <div id="team" class="container-fluid">
+          <div class="container-xxxl">
+            <div class="row">
+              <div class="col-12 px-5 pt-5">
+                <h2 id="hTeam">Meet the team.</h2>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-4_5 pb-5">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-img-hover">
+                    <img
+                      id="img-team1"
+                      src="img/team1.jpg"
+                      class="card-img-top img-hover"
+                      alt="Headshot - Sydney Smith"
+                      title="Headshot - Sydney Smith" />
+                    <div class="cover-img-hover d-flex align-items-center">
+                      <h4>
+                        "Fashion is not just about looking good, it&apos;s about
+                        feeling good."
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Sydney Smith</h5>
+                    <p class="card-text">
+                      As a lifelong fashion enthusiast, Sydney dreamed of
+                      starting a business that empowers people to express their
+                      style. She aims to provide high-quality fashion that
+                      resonates with everyone. Her passion, along with her
+                      business knowledge, motivates her to create a seamless
+                      shopping experience.
+                    </p>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <p class="card-text mt-auto">
+                      <i class="fa-solid fa-user"></i>Founder & CEO
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="container-img-hover">
+                    <img
+                      id="img-team2"
+                      src="img/team2.jpg"
+                      class="card-img-top img-hover"
+                      alt="Headshot - Alex Turner"
+                      title="Headshot - Alex Turner" />
+                    <div class="cover-img-hover d-flex align-items-center">
+                      <h4>"Trends come and go, but style is timeless."</h4>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Alex Turner</h5>
+                    <p class="card-text">
+                      With a sharp eye for detail and a passion for design, Alex
+                      brings a creative perspective to our business. His
+                      knowledge in trend forecasting ensures that our fashion
+                      collection stays up-to-date. He has a talent for selecting
+                      unique, trendy items and designing stunning displays for
+                      them.
+                    </p>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <p class="card-text mt-auto">
+                      <i class="fa-solid fa-user"></i>Creative Director
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col" id="team3">
+                <div class="card h-100">
+                  <div class="container-img-hover">
+                    <img
+                      src="img/team3.jpg"
+                      class="card-img-top img-team3 img-hover"
+                      id="img-team3"
+                      alt="Headshot - Olivia Chen"
+                      title="Headshot - Olivia Chen" />
+                    <div class="cover-img-hover d-flex align-items-center">
+                      <h4>
+                        "We&apos;re more than just a fashion brand, we&apos;re a
+                        community."
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Olivia Chen</h5>
+                    <p class="card-text">
+                      Olivia's approach to marketing and social media trends
+                      have been crucial in developing our online presence. She
+                      is passionate about connecting with customers and creating
+                      content that inspires them. Her expertise in marketing
+                      guarantees that our brand reaches the right audience.
+                    </p>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <p class="card-text mt-auto">
+                      <i class="fa-solid fa-user"></i>Marketing Manager
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        
+        SECTION: PRODUCTS
+        
+        -->
+        <div id="products" class="container-fluid pt-3 pb-4">
+          <div class="container-xxxl text-center">
+            <h2 id="hProducts">Explore our collection.</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4 pt-4_5 pb-5">
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="img/products/product1.jpg"
+                    class="card-img-top"
+                    alt="Product - The Cozy Cardigan"
+                    title="Product - The Cozy Cardigan" />
+                  <div class="card-body px-3">
+                    <div class="row mb-3">
+                      <div class="col">
+                        <p class="card-text card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                      </div>
+                      <div class="col">
+                        <p class="card-text card-sku"><b>SKU: </b>TS-CARD02</p>
+                      </div>
+                    </div>
+
+                    <h5 class="card-title">The Cozy Cardigan</h5>
+                    <p class="card-text">
+                      This oversized cardigan is the perfect layering piece for
+                      any outfit. Made from soft yarn, it&apos;s both stylish
+                      and comfortable.
+                    </p>
+                    <p class="card-text card-price">
+                      <span class="dollar">39.99</span>
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-lime px-4 py-3 w-100"
+                      id="product1Btn">
+                      <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="img/products/product2.jpg"
+                    class="card-img-top"
+                    alt="Product - The Boss Jacket"
+                    title="Product - The Boss Jacket" />
+                  <div class="card-body px-3">
+                    <div class="row mb-3">
+                      <div class="col">
+                        <p class="card-text card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </p>
+                      </div>
+                      <div class="col">
+                        <p class="card-text card-sku"><b>SKU: </b>TS-JACK05</p>
+                      </div>
+                    </div>
+
+                    <h5 class="card-title">The Boss Jacket</h5>
+                    <p class="card-text">
+                      This classic leather jacket is a must-have for any men's
+                      collection. It's stylish, durable, and perfect for any
+                      occasion.
+                    </p>
+                    <p class="card-text card-price">
+                      <span class="dollar">59.99</span>
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-lime px-4 py-3 w-100"
+                      id="product2Btn">
+                      <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="img/products/product3.jpg"
+                    class="card-img-top"
+                    alt="Product - The Sleek Shades"
+                    title="Product - The Sleek Shades" />
+                  <div class="card-body px-3">
+                    <div class="row mb-3">
+                      <div class="col">
+                        <p class="card-text card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </p>
+                      </div>
+                      <div class="col">
+                        <p class="card-text card-sku"><b>SKU: </b>TS-SUNG06</p>
+                      </div>
+                    </div>
+
+                    <h5 class="card-title">The Sleek Shades</h5>
+                    <p class="card-text">
+                      These functional sunglasses are a fashion statement. The
+                      sleek design and UV protection make them the perfect
+                      accessory.
+                    </p>
+                    <p class="card-text card-price">
+                      <span class="dollar">29.99</span>
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-lime px-4 py-3 w-100"
+                      id="product3Btn">
+                      <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="img/products/product4.jpg"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body px-3">
+                    <div class="row mb-3">
+                      <div class="col">
+                        <p class="card-text card-rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                      </div>
+                      <div class="col">
+                        <p class="card-text card-sku"><b>SKU: </b>TS-EARR01</p>
+                      </div>
+                    </div>
+
+                    <h5 class="card-title">The Statement Earrings</h5>
+                    <p class="card-text">
+                      These bold earrings are sure to turn heads. The unqiue
+                      design and high-quality materials surely make them elevate
+                      your outfit.
+                    </p>
+                    <p class="card-text card-price">
+                      <span class="dollar">19.99</span>
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-lime px-4 py-3 w-100"
+                      id="product4Btn">
+                      <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    
+    SECTION: CONTACT
+    
+    -->
+    <div id="contact" class="container-fluid">
+      <div class="row my-6">
+        <div class="col-12 col-md-4 px-5 row">
+          <div class="align-self-start">
+            <h2>Get in touch with us.</h2>
+            <div id="contactInfo" class="mt-4">
+              <h5>
+                <i class="fa-solid fa-earth-americas"></i>777 Western Road,
+                London ON
+              </h5>
+              <h5>
+                <i class="fa-solid fa-inbox"></i
+                ><a href="mailto:admin@trendsetter.com"
+                  >admin@trendsetter.com</a
+                >
+              </h5>
+              <h5><i class="fa-solid fa-phone"></i>+1 (519) 123-4567</h5>
+              <h5><i class="fa-solid fa-fax"></i>+1 (519) 765-4321</h5>
+            </div>
+          </div>
+          <div class="align-self-end">
+            <h5 class="mb-3">
+              <b>Customer Service Status: </b><br />
+              <p id="serviceStatus"></p>
+            </h5>
+            <div id="socialMediaIcons" class="flex">
+              <a href="#socials"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#socials"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#socials"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#socials"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#socials"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#socials"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 pe-5">
+          <form>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="inputName"
+                placeholder="John Smith"
+                onblur="checkName();" />
+              <label for="inputName">Your name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="inputPhone"
+                placeholder="999-999-9999"
+                onblur="checkPhone();" />
+              <label for="inputPhone">Phone number</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                id="inputReason"
+                aria-label="Reason for message"
+                onchange="checkReason();">
+                <option value="1" selected>General inquiry</option>
+                <option value="2">Pricing</option>
+                <option value="3">Product info</option>
+                <option value="4">Shipping</option>
+                <option value="5">Other</option>
+              </select>
+              <label for="inputReason">Reason for message</label>
+            </div>
+            <div id="productIdBox" class="form-floating mb-3 hidden">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="inputProductId"
+                placeholder="TSX400"
+                onblur="checkProductId();" />
+              <label for="inputProductId">Product ID</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control form-control-lg"
+                placeholder="Leave a message here"
+                id="inputMessage"
+                onblur="checkMessage();"></textarea>
+              <label for="inputMessage">Message</label>
+            </div>
+            <button
+              type="button"
+              onclick="submitMessage();"
+              class="btn btn-lg btn-submit px-4 py-3 w-100">
+              <span id="sendSpinner" class="hidden"
+                ><i class="fa-solid fa-spinner hidden" id="sendSpinnerIcon"></i
+                >Send message</span
+              >
+              <span id="sendArrow" class="visible"
+                ><i class="fa-solid fa-paper-plane visible"></i>Send
+                message</span
+              >
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    
+    SECTION: FOOTER (with REFERENCES)
+    
+    -->
+    <div id="footer" class="container-fluid">
+      <div class="row px-4_5 pt-4">
+        <div class="col mb-2">
+          <a class="navbar-brand footer-brand" href="#">Trendsetter.</a>
+          <h4>Empowering you<br />through fashion.</h4>
+          <div class="spacer"></div>
+          <p class="footer-copyright">
+            Website by
+            <a href="https://nimsitha.com" target="_blank">Imesh Nimsitha</a>.
+          </p>
+        </div>
+
+        <div class="col mb-2"></div>
+
+        <div class="col mb-2">
+          <h5>References</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="https://favicon.io/favicon-generator/"
+                target="_blank"
+                class="nav-link p-0"
+                >Favicon Generator</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/trendy-couple-in-sunglasses-by-the-sea-29380306/"
+                target="_blank"
+                class="nav-link p-0"
+                >Banner - Header</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/women-s-pink-sweatshirt-and-brown-plaid-skirt-794064/"
+                target="_blank"
+                class="nav-link p-0"
+                >Picture 1 - About</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/photo-of-woman-wearing-red-sweater-3756777/"
+                target="_blank"
+                class="nav-link p-0"
+                >Picture 2 - About</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-2">
+          <h5><span class="footer-placeholder">.</span></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/woman-in-blue-long-sleeve-shirt-wearing-white-headphones-3767392/"
+                target="_blank"
+                class="nav-link p-0"
+                >Headshot - Sydney Smith</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/man-in-red-button-up-shirt-3777943/"
+                target="_blank"
+                class="nav-link p-0"
+                >Headshot - Alex Turner</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/smiling-woman-in-blue-top-3807852/"
+                target="_blank"
+                class="nav-link p-0"
+                >Headshot - Olivia Chen</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://fontawesome.com/"
+                target="_blank"
+                class="nav-link p-0"
+                >Icons - Font Awesome</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-2">
+          <h5><span class="footer-placeholder">.</span></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/man-wearing-black-full-zip-biker-jacket-826380/"
+                target="_blank"
+                class="nav-link p-0"
+                >Product - Leather Jacket</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/young-woman-in-trendy-outfit-with-scissors-preparing-parcel-6347511/"
+                target="_blank"
+                class="nav-link p-0"
+                >Product - Cardigan</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/close-up-photo-of-woman-wearing-sunglasses-4223655/"
+                target="_blank"
+                class="nav-link p-0"
+                >Product - Sunglasses</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="https://www.pexels.com/photo/women-s-black-hijab-veil-1161282/"
+                target="_blank"
+                class="nav-link p-0"
+                >Product - Earrings</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    
+    SCRIPTS for BOOTSTRAP
+    
+    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

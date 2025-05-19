@@ -40,19 +40,19 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .visible {
-  display: block;
+  display: block !important;
 }
 
-.px-4_5 {
+.px-5 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.pt-4_5 {
+.pt-3 {
   padding-top: 2.5rem;
 }
 
@@ -83,6 +83,7 @@ h1 {
   font-size: 18px;
   border-radius: 100%;
   border: 0px;
+  padding: 1rem;
 }
 
 .btn-top:hover {
@@ -141,8 +142,14 @@ h1 {
 }
 
 .btn:focus {
-  outline: none !important;
-  box-shadow: none !important;
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+[role="region"]:focus {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
 }
 
 /* NAVBAR */
@@ -150,6 +157,7 @@ h1 {
   font-weight: 700;
   font-size: 24px;
   color: var(--dark2);
+  text-decoration: none;
 }
 
 .navbar-brand:hover {
@@ -159,10 +167,12 @@ h1 {
 .nav-link {
   font-weight: 600;
   color: var(--neutral);
+  text-decoration: none;
 }
 
 .nav-link:hover {
   color: var(--dark2);
+  background-color: var(--light-tint2);
 }
 
 /* SECTION: HEADER */
@@ -591,4 +601,106 @@ h1 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* CROSS-BROWSER RESPONSIVENESS TWEAKS */
+@media (max-width: 767px) {
+  .px-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .pt-3 {
+    padding-top: 1rem;
+  }
+
+  #team,
+  #products,
+  #footer {
+    padding: 1rem;
+  }
+
+  #contact .my-6 {
+    margin: 2rem 0rem;
+  }
+
+  #footer .px-3 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #contact > .align-self-start {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #contact-form {
+    padding-left: 3rem;
+    padding-right: auto;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  #socialMediaIcons {
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  #team .row-cols-1,
+  #products .row-cols-1 {
+    --bs-columns: 1;
+  }
+
+  #footer .references {
+    display: none;
+  }
+  #footer .branding {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #contact .col-md-4,
+  #contact .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1132px) {
+  #imgAbout1,
+  #imgAbout2 {
+    display: none;
+  }
+
+  #h-header {
+    padding-bottom: 1rem;
+  }
+
+  #p-about {
+    padding-bottom: 1rem;
+  }
+
+  #about .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #img-header {
+    height: 40vh;
+  }
+
+  #about p {
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
 }

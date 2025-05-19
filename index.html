@@ -7,7 +7,7 @@ CS 2033
 
 -->
 
-<html>
+<html lang="en" class="no-js">
   <head>
     <title>Trendsetter - Empowering you through fashion</title>
     <meta charset="utf-8" />
@@ -18,32 +18,41 @@ CS 2033
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
     <link href="css/index.css" rel="stylesheet" />
 
     <script
       src="https://kit.fontawesome.com/55a8c16208.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script src="js/index.js" type="text/javascript"></script>
   </head>
 
-  <body onload="updateHours();" onscroll="scroll();">
+  <body onload="updateHours();" onscroll="scroll();" class="js">
     <!--
     
     FIXED BUTTON: BACK TO TOP
     
     -->
-    <div id="backToTop" class="position-fixed bottom-0 end-0 mb-3 me-3">
+    <div
+      id="backToTop"
+      class="position-fixed bottom-0 end-0 mb-3 me-3"
+      role="region"
+      aria-label="Back to top button"
+    >
       <button
         class="btn btn-top shadow-none px-3 py-3 d-flex align-items-center"
         type="button"
         onclick="backToTop();"
         aria-label="Back to Top"
-        id="backToTopBtn">
+        id="backToTopBtn"
+      >
         <i class="fa-solid fa-chevron-up"></i>
       </button>
     </div>
@@ -53,29 +62,31 @@ CS 2033
     SECTION: HEADER w/ NAVBAR
 
     -->
-    <div id="header" class="container-fluid">
+    <div role="banner" id="header" class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-4 px-5 pt-3">
+        <div class="col-12 col-md-5 col-lg-4 px-5 pt-3">
           <a class="navbar-brand" href="#">Trendsetter.</a>
-          <h1>
+          <h1 id="h-header">
             Empowering you<br />
             through fashion.
           </h1>
         </div>
-        <div id="img-header" class="col-12 col-md-8 px-4_5 pt-3">
+        <div id="img-header" class="col-12 col-md-7 col-lg-8 px-5 pt-3">
           <div class="bg-transparent" id="navbarSupportedContent">
             <ul id="nav" class="nav mb-2 mb-lg-0 justify-content-end">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">HOME</a>
+                <a class="nav-link" href="#" aria-current="page" role="link"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT</a>
+                <a class="nav-link" href="#about" role="link">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#products">PRODUCTS</a>
+                <a class="nav-link" href="#products" role="link">PRODUCTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACT</a>
+                <a class="nav-link" href="#contact" role="link">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -88,10 +99,10 @@ CS 2033
     SECTION: ABOUT BUSINESS
     
     -->
-    <div id="about" class="container-fluid">
+    <div id="about" role="main" class="container-fluid">
       <div class="row">
-        <div class="col-4 px-5 pt-4">
-          <p>
+        <div class="col-4 px-5 pt-3">
+          <p id="p-about">
             Trendsetter is an online marketplace dedicated to empowering you
             through fashion. We offer a wide selection of trendy clothing and
             accessories that cater to many diverse tastes. We pride ourselves on
@@ -112,13 +123,13 @@ CS 2033
       </div>
     </div>
 
-    <div class="bg-light">
-      <div id="texture">
-        <!--
+    <!--
     
-      SECTION: ABOUT TEAM
-  
-      -->
+    SECTION: ABOUT TEAM
+    
+    -->
+    <div role="region" id="team" aria-label="Team" class="bg-light">
+      <div id="texture">
         <div id="team" class="container-fluid">
           <div class="container-xxxl">
             <div class="row">
@@ -126,7 +137,7 @@ CS 2033
                 <h2 id="hTeam">Meet the team.</h2>
               </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4 pt-4_5 pb-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 pb-5">
               <div class="col">
                 <div class="card h-100">
                   <div class="container-img-hover">
@@ -135,7 +146,8 @@ CS 2033
                       src="img/team1.jpg"
                       class="card-img-top img-hover"
                       alt="Headshot - Sydney Smith"
-                      title="Headshot - Sydney Smith" />
+                      title="Headshot - Sydney Smith"
+                    />
                     <div class="cover-img-hover d-flex align-items-center">
                       <h4>
                         "Fashion is not just about looking good, it&apos;s about
@@ -170,7 +182,8 @@ CS 2033
                       src="img/team2.jpg"
                       class="card-img-top img-hover"
                       alt="Headshot - Alex Turner"
-                      title="Headshot - Alex Turner" />
+                      title="Headshot - Alex Turner"
+                    />
                     <div class="cover-img-hover d-flex align-items-center">
                       <h4>"Trends come and go, but style is timeless."</h4>
                     </div>
@@ -202,7 +215,8 @@ CS 2033
                       class="card-img-top img-team3 img-hover"
                       id="img-team3"
                       alt="Headshot - Olivia Chen"
-                      title="Headshot - Olivia Chen" />
+                      title="Headshot - Olivia Chen"
+                    />
                     <div class="cover-img-hover d-flex align-items-center">
                       <h4>
                         "We&apos;re more than just a fashion brand, we&apos;re a
@@ -237,17 +251,23 @@ CS 2033
         SECTION: PRODUCTS
         
         -->
-        <div id="products" class="container-fluid pt-3 pb-4">
+        <div
+          id="products"
+          role="region"
+          aria-label="Products"
+          class="container-fluid pt-3 pb-4"
+        >
           <div class="container-xxxl text-center">
             <h2 id="hProducts">Explore our collection.</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4 pt-4_5 pb-5">
+            <div class="row row-cols-1 row-cols-md-4 g-4 pt-3 pb-5">
               <div class="col">
                 <div class="card">
                   <img
                     src="img/products/product1.jpg"
                     class="card-img-top"
                     alt="Product - The Cozy Cardigan"
-                    title="Product - The Cozy Cardigan" />
+                    title="Product - The Cozy Cardigan"
+                  />
                   <div class="card-body px-3">
                     <div class="row mb-3">
                       <div class="col">
@@ -276,7 +296,8 @@ CS 2033
                     <button
                       type="button"
                       class="btn btn-lime px-4 py-3 w-100"
-                      id="product1Btn">
+                      id="product1Btn"
+                    >
                       <i class="fa-solid fa-cart-shopping"></i>Add to Cart
                     </button>
                   </div>
@@ -288,7 +309,8 @@ CS 2033
                     src="img/products/product2.jpg"
                     class="card-img-top"
                     alt="Product - The Boss Jacket"
-                    title="Product - The Boss Jacket" />
+                    title="Product - The Boss Jacket"
+                  />
                   <div class="card-body px-3">
                     <div class="row mb-3">
                       <div class="col">
@@ -317,7 +339,8 @@ CS 2033
                     <button
                       type="button"
                       class="btn btn-lime px-4 py-3 w-100"
-                      id="product2Btn">
+                      id="product2Btn"
+                    >
                       <i class="fa-solid fa-cart-shopping"></i>Add to Cart
                     </button>
                   </div>
@@ -329,7 +352,8 @@ CS 2033
                     src="img/products/product3.jpg"
                     class="card-img-top"
                     alt="Product - The Sleek Shades"
-                    title="Product - The Sleek Shades" />
+                    title="Product - The Sleek Shades"
+                  />
                   <div class="card-body px-3">
                     <div class="row mb-3">
                       <div class="col">
@@ -358,7 +382,8 @@ CS 2033
                     <button
                       type="button"
                       class="btn btn-lime px-4 py-3 w-100"
-                      id="product3Btn">
+                      id="product3Btn"
+                    >
                       <i class="fa-solid fa-cart-shopping"></i>Add to Cart
                     </button>
                   </div>
@@ -369,16 +394,20 @@ CS 2033
                   <img
                     src="img/products/product4.jpg"
                     class="card-img-top"
-                    alt="..." />
+                    alt="..."
+                  />
                   <div class="card-body px-3">
                     <div class="row mb-3">
                       <div class="col">
                         <p class="card-text card-rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-solid fa-star" aria-label="Star"></i>
+                          <i class="fa-solid fa-star" aria-label="Star"></i>
+                          <i class="fa-solid fa-star" aria-label="Star"></i>
+                          <i class="fa-solid fa-star" aria-label="Star"></i>
+                          <i
+                            class="fa-solid fa-star-half-stroke"
+                            aria-label="Star"
+                          ></i>
                         </p>
                       </div>
                       <div class="col">
@@ -388,7 +417,7 @@ CS 2033
 
                     <h5 class="card-title">The Statement Earrings</h5>
                     <p class="card-text">
-                      These bold earrings are sure to turn heads. The unqiue
+                      These bold earrings are sure to turn heads. The unique
                       design and high-quality materials surely make them elevate
                       your outfit.
                     </p>
@@ -398,8 +427,13 @@ CS 2033
                     <button
                       type="button"
                       class="btn btn-lime px-4 py-3 w-100"
-                      id="product4Btn">
-                      <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                      id="product4Btn"
+                    >
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-label="Add to Cart"
+                      ></i
+                      >Add to Cart
                     </button>
                   </div>
                 </div>
@@ -422,17 +456,23 @@ CS 2033
             <h2>Get in touch with us.</h2>
             <div id="contactInfo" class="mt-4">
               <h5>
-                <i class="fa-solid fa-earth-americas"></i>777 Western Road,
-                London ON
+                <i class="fa-solid fa-earth-americas" aria-label="Address"></i
+                >777 Western Road, London ON
               </h5>
               <h5>
-                <i class="fa-solid fa-inbox"></i
+                <i class="fa-solid fa-inbox" aria-label="Email"></i
                 ><a href="mailto:admin@trendsetter.com"
                   >admin@trendsetter.com</a
                 >
               </h5>
-              <h5><i class="fa-solid fa-phone"></i>+1 (519) 123-4567</h5>
-              <h5><i class="fa-solid fa-fax"></i>+1 (519) 765-4321</h5>
+              <h5>
+                <i class="fa-solid fa-phone" aria-label="Phone"></i>+1 (519)
+                123-4567
+              </h5>
+              <h5>
+                <i class="fa-solid fa-fax" aria-label="Fax"></i>+1 (519)
+                765-4321
+              </h5>
             </div>
           </div>
           <div class="align-self-end">
@@ -441,16 +481,28 @@ CS 2033
               <p id="serviceStatus"></p>
             </h5>
             <div id="socialMediaIcons" class="flex">
-              <a href="#socials"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#socials"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#socials"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#socials"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="#socials"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#socials"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#socials"
+                ><i class="fa-brands fa-facebook" aria-label="Facebook"></i
+              ></a>
+              <a href="#socials"
+                ><i class="fa-brands fa-twitter" aria-label="Twitter"></i
+              ></a>
+              <a href="#socials"
+                ><i class="fa-brands fa-instagram" aria-label="Instagram"></i
+              ></a>
+              <a href="#socials"
+                ><i class="fa-brands fa-tiktok" aria-label="TikTok"></i
+              ></a>
+              <a href="#socials"
+                ><i class="fa-brands fa-youtube" aria-label="YouTube"></i
+              ></a>
+              <a href="#socials"
+                ><i class="fa-brands fa-linkedin" aria-label="LinkedIn"></i
+              ></a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-8 pe-5">
+        <div class="col-12 col-md-8 pe-5" id="contact-form">
           <form>
             <div class="form-floating mb-3">
               <input
@@ -458,7 +510,8 @@ CS 2033
                 class="form-control form-control-lg"
                 id="inputName"
                 placeholder="John Smith"
-                onblur="checkName();" />
+                onblur="checkName();"
+              />
               <label for="inputName">Your name</label>
             </div>
             <div class="form-floating mb-3">
@@ -467,7 +520,8 @@ CS 2033
                 class="form-control form-control-lg"
                 id="inputPhone"
                 placeholder="999-999-9999"
-                onblur="checkPhone();" />
+                onblur="checkPhone();"
+              />
               <label for="inputPhone">Phone number</label>
             </div>
             <div class="form-floating mb-3">
@@ -475,7 +529,8 @@ CS 2033
                 class="form-select"
                 id="inputReason"
                 aria-label="Reason for message"
-                onchange="checkReason();">
+                onchange="checkReason();"
+              >
                 <option value="1" selected>General inquiry</option>
                 <option value="2">Pricing</option>
                 <option value="3">Product info</option>
@@ -490,7 +545,8 @@ CS 2033
                 class="form-control form-control-lg"
                 id="inputProductId"
                 placeholder="TSX400"
-                onblur="checkProductId();" />
+                onblur="checkProductId();"
+              />
               <label for="inputProductId">Product ID</label>
             </div>
             <div class="form-floating mb-3">
@@ -498,13 +554,15 @@ CS 2033
                 class="form-control form-control-lg"
                 placeholder="Leave a message here"
                 id="inputMessage"
-                onblur="checkMessage();"></textarea>
+                onblur="checkMessage();"
+              ></textarea>
               <label for="inputMessage">Message</label>
             </div>
             <button
               type="button"
               onclick="submitMessage();"
-              class="btn btn-lg btn-submit px-4 py-3 w-100">
+              class="btn btn-lg btn-submit px-4 py-3 w-100"
+            >
               <span id="sendSpinner" class="hidden"
                 ><i class="fa-solid fa-spinner hidden" id="sendSpinnerIcon"></i
                 >Send message</span
@@ -524,9 +582,9 @@ CS 2033
     SECTION: FOOTER (with REFERENCES)
     
     -->
-    <div id="footer" class="container-fluid">
-      <div class="row px-4_5 pt-4">
-        <div class="col mb-2">
+    <footer role="contentinfo" id="footer" class="container-fluid">
+      <div class="row px-3 pt-4">
+        <div class="col mb-2 branding">
           <a class="navbar-brand footer-brand" href="#">Trendsetter.</a>
           <h4>Empowering you<br />through fashion.</h4>
           <div class="spacer"></div>
@@ -538,7 +596,7 @@ CS 2033
 
         <div class="col mb-2"></div>
 
-        <div class="col mb-2">
+        <div class="col mb-2 references">
           <h5>References</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
@@ -576,7 +634,7 @@ CS 2033
           </ul>
         </div>
 
-        <div class="col mb-2">
+        <div class="col mb-2 references">
           <h5><span class="footer-placeholder">.</span></h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
@@ -614,7 +672,7 @@ CS 2033
           </ul>
         </div>
 
-        <div class="col mb-2">
+        <div class="col mb-2 references">
           <h5><span class="footer-placeholder">.</span></h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
@@ -652,7 +710,7 @@ CS 2033
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
 
     <!-- 
     
@@ -662,6 +720,7 @@ CS 2033
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
